@@ -132,6 +132,12 @@ section{
 #contact p {
     font-size: 18px;
 }
+ #home img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 
 
 @media (max-width: 768px) {
@@ -154,11 +160,6 @@ section{
     #home h2 {
         font-size: 25px;
     }
-    #home img {
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
+   
 }
 
