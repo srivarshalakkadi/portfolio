@@ -1,96 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Srivarsha Lakkadi - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Srivarsha Lakkadi - Portfolio</title>
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
-
 <body>
 
-    <header>
-        <nav>
-            <h2>Srivarsha</h2>
-
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <section id="home">
-      <img src="Image 2026-08-26 at 12.44.10 PM.jpeg"alt="Srivarsha"width="250"height="250px">
-
-        <h1>Hi, I'm Srivarsha</h1>
-
-        <h2>Java Full Stack Developer</h2>
-
-        <p>
-            I am passionate about learning programming and
-            building web applications.
-        </p>
-
-        <a href="#about">Know More</a>
-
-    </section>
-
-
-    
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <p>
-            Hello! I am Srivarsha Lakkadi.
-            I am interested in Java, Python and web development.
-            I am continuously learning new technologies and
-            improving my programming skills.
-        </p>
-
-    </section>
-
-
-    <section id="skills">
-
-        <h2>My Skills</h2>
-
-        <ul>
-            <li>Java</li>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>CSS</li>
+  
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <i class="fa-solid fa-code"></i> Srivarsha
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#about">About me</a></li>
         </ul>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </nav>
+    </div>
+  </header>
 
-    </section>
+  
+  <section class="hero" id="home">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <h3>Hey, I am Srivarsha Lakkadi</h3>
+        <h1>Aspiring Java Full Stack Developer</h1>
+        <p>Passionate about building full-stack web applications using Java, Spring Boot, HTML, CSS, JavaScript, and Databases.</p>
+        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+      </div>
+      <div class="hero-image">
+        <img src="Image 2026-08-26 at 12.44.10 PM.jpeg" alt="Srivarsha Photo">
+      </div>
+    </div>
+  </section>
 
+  
+  <section class="expertise">
+    <div class="container">
+      <p class="sub-title">My Skills</p>
+      <h2 class="section-title">My Technical Skills</h2>
+      <div class="expertise-grid">
+        <div class="card">
+          <div class="card-icon"><i class="fa-brands fa-java"></i></div>
+          <h3>Java & Backend</h3>
+          <p>Core Java, Object-Oriented Programming (OOPs), Data Structures, and Spring Boot framework.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Frontend Development</h3>
+          <p>HTML5, CSS3, JavaScript, Bootstrap, and responsive UI design creation.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>Database & SQL</h3>
+          <p>MySQL, relational database design, writing SQL queries, and handling data structures.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-gears"></i></div>
+          <h3>Tools & Frameworks</h3>
+          <p>Git, GitHub, VS Code, Eclipse/IntelliJ IDEA, and RESTful API integration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="education">
+  
+  <section class="about" id="about">
+    <div class="container about-container">
+      <div class="about-text">
+        <p class="sub-title">About</p>
+        <h2 class="section-title">About Me</h2>
+        <p>Hello! I'm Srivarsha Lakkadi, currently learning Java Full Stack Development. I love problem-solving and building web applications from scratch, handling both frontend interfaces and backend logic.</p>
+        <p>My goal is to constantly expand my coding knowledge and build real-world software applications using modern full-stack technologies.</p>
+      </div>
+    </div>
+  </section>
 
-        <h2>Education</h2>
+  
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="portfolio-header">
+        <div>
+          <p class="sub-title">My Learning Journey</p>
+          <h2 class="section-title">My Projects</h2>
+        </div>
+        <a href="https://github.com" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> Visit My GitHub</a>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <div class="portfolio-content">
+            <h3>Student Management System</h3>
+            <p>A Java-based CRUD backend application integrated with MySQL database.</p>
+            <a href="#" class="portfolio-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-content">
+            <h3>Personal Portfolio</h3>
+            <p>A responsive personal portfolio website built with HTML, CSS, and JS.</p>
+            <a href="#" class="portfolio-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-content">
+            <h3>E-Commerce Web App</h3>
+            <p>Full stack web app built using Spring Boot REST APIs and Frontend framework.</p>
+            <a href="#" class="portfolio-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <p>
-            Samskruti College of Engineering and Technology
-        </p>
+  
+  <section class="contact" id="contact">
+    <div class="container">
+      <p class="sub-title">Get In Touch</p>
+      <h2 class="section-title">Contact Me</h2>
+      <p style="color: var(--text-gray);">Feel free to reach out to me for collaborations or job opportunities!</p>
+      
+      <form class="contact-form" onsubmit="event.preventDefault();">
+        <div class="form-group-row">
+          <div class="form-group">
+            <label>First name</label>
+            <input type="text" placeholder="" required />
+          </div>
+          <div class="form-group">
+            <label>Last name</label>
+            <input type="text" placeholder="" required />
+          </div>
+        </div>
+        <div class="form-group-row">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="" required />
+          </div>
+          <div class="form-group">
+            <label>Phone number</label>
+            <input type="tel" placeholder="" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="5" placeholder="Type your message..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
 
-    </section>
-
-    <section id="contact">
-
-        <h2>Get In Touch</h2>
-
-        <p>
-            Email me to connect with me.
-        </p>
-
-    </section>
+  
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="logo">
+          <i class="fa-solid fa-code"></i> Srivarsha
+        </div>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Made with  by Srivarsha Lakkadi</p>
+      </div>
+    </div>
+  </footer>
 
 </body>
-
 </html>
